@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GadgetVerse</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="#" class="logo">GadgetVerse</a>
+      <nav id="nav">
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#kategori">Kategori</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="#" class="cart-icon">
+        <div class="cart-dropdown" id="cart-dropdown">
+  <h4>Isi Keranjang</h4>
+  <ul id="cart-items"></ul>
+  <div class="cart-total">Total: <span id="cart-total">Rp 0</span></div>
+</div>
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero" id="beranda">
+    <div class="hero-content">
+      <small class="hero-tagline">Inovasi | Gaya | Performa</small>
+      <h1>GadgetVerse</h1>
+      <p>Temukan gadget terbaru dari brand ternama dunia untuk gaya hidup digitalmu. Teknologi mutakhir, desain elegan, performa tanpa kompromi.</p>
+      <a href="#produk" class="cta-button">Jelajahi Koleksi</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="produk" class="fade">
+      <h2 class="section-title">Produk Terbaru</h2>
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image"><img src="images/S25Ultra.jpg" alt="Samsung S25 Ultra" /></div>
+          <div class="product-info">
+            <h3 class="product-name">Samsung Galaxy S25 Ultra</h3>
+            <p class="product-description">Smartphone flagship dengan kamera 200MP, S Pen, dan performa ekstrem.</p>
+            <div class ="product-price">Rp 19.999.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="images/zfold6.jpg" alt="Samsung Galaxy Z Fold 6" /></div>
+          <div class="product-info">
+            <h3 class="product-name">Samsung Galaxy Z Fold 6</h3>
+            <p class="product-description">Layar lipat 7,6″ & 6,3″, Snapdragon 8 Gen 3, dukung S Pen, dan multitasking unggulan.</p>
+            <div class="product-price">Rp 30.000.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="images/iphone16.jpg" alt="Apple iPhone 16" /></div>
+          <div class="product-info">
+            <h3 class="product-name">Apple iPhone 16</h3>
+            <p class="product-description">Chip A18 terbaru, kamera 48MP, Dynamic Island, USB-C, dan Apple Intelligence.</p>
+            <div class="product-price">Rp 12.500.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="images/ps5pro.jpg" alt="PlayStation 5 Pro" /></div>
+          <div class="product-info">
+            <h3 class="product-name">PlayStation 5 Pro</h3>
+            <p class="product-description">Konsol generasi terbaru dengan dukungan 8K, ray tracing, SSD ultra cepat & performa grafis 4K hingga 120FPS.</p>
+            <div class="product-price">Rp 12.000.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="images/xiaomi12.jpg" alt="Xiaomi 12" /></div>
+          <div class="product-info">
+            <h3 class="product-name">Xiaomi 12</h3>
+            <p class="product-description">Snapdragon 8 Gen 1, layar AMOLED 6,28″ 120Hz, kamera 50MP, fast charging 67W.</p>
+            <div class="product-price">Rp 9.500.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="images/galaxywatchultra.jpg" alt="Samsung Galaxy Watch Ultra" /></div>
+          <div class="product-info">
+            <h3 class="product-name">Samsung Galaxy Watch Ultra</h3>
+            <p class="product-description">Smartwatch titanium tahan air 100m, Galaxy AI, GPS akurat, dan baterai hingga 48 jam.</p>
+            <div class="product-price">Rp 10.500.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="images/pixel9proxl.jpg" alt="Google Pixel 9 Pro XL" /></div>
+          <div class="product-info">
+            <h3 class="product-name">Google Pixel 9 Pro XL</h3>
+            <p class="product-description">Layar OLED 6,8″ 120Hz, chipset Tensor G4, triple kamera 50MP, AI fotografi canggih.</p>
+            <div class="product-price">Rp 17.500.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="images/huawei-matebook-d16.jpg" alt="Huawei MateBook D16" /></div>
+          <div class="product-info">
+            <h3 class="product-name">Huawei MateBook D16 (2024)</h3>
+            <p class="product-description">Laptop 16″ IPS, Intel Core i9-13900H, RAM 16GB, SSD 1TB, ringan & profesional.</p>
+            <div class="product-price">Rp 20.000.000</div>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="kategori" class="fade">
+      <h2 class="section-title">Kategori</h2>
+      <div class="categories">
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="category-name">Smartphone</h3>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <h3 class="category-name">Audio</h3>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h3 class="category-name">Laptop & Tablet</h3>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="category-name">Smartwatch</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="about fade">
+      <h2 class="section-title">Tentang GadgetVerse</h2>
+      <div class="about">
+        <p>GadgetVerse adalah destinasi utama untuk teknologi terkini. Kami menyediakan koleksi gadget terbaru dari brand ternama dunia dengan kualitas terjamin. Fokus kami adalah memberikan pengalaman berbelanja teknologi yang menyenangkan dengan produk-produk pilihan yang telah melalui proses seleksi ketat untuk memastikan performa dan keandalan yang optimal bagi pelanggan kami.</p>
+      </div>
+    </section>
+
+    <section id="kontak" class="contact-section fade">
+  <h2 class="section-title">Kontak Kami</h2>
+  <form class="contact-form">
+    <label for="nama">Nama</label>
+    <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." rows="5" required></textarea>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+</section>
+  </main>
+
+  <footer id="kontak">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>GadgetVerse</h3>
+        <p>Toko gadget terpercaya dengan koleksi terlengkap dari brand besar.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Kontak</h3>
+        <p>Email: support@gadgetverse.com</p>
+        <p>Phone: +62 812-3456-7890</p>
+        <p>WhatsApp: +62 812-3456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Alamat</h3>
+        <p>Jl. Teknologi No. 88</p>
+        <p>Jakarta Selatan, Indonesia</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p><a href="#beranda">Beranda</a></p>
+        <p><a href="#produk">Produk</a></p>
+        <p><a href="#kategori">Kategori</a></p>
+        <p><a href="#tentang">Tentang Kami</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GadgetVerse. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <!-- Modal Produk -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modal-image" src="" alt="" class="modal-image">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <p id="modal-price" class="product-price"></p>
+      <button class="add-to-cart">Beli Sekarang</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
